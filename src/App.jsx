@@ -1,21 +1,16 @@
 import React from "react";
-import Hero from "./Component/Hero";
-import Btn from "./Common/Btn";
-import Arrow from "./Common/Arrow";
 import News from "./Component/News";
+import Future from "./Component/Future";
 import Review from "./Component/Review";
-
+import Footer from "./Component/Footer";
 
 function App() {
   return (
     <>
-      <Hero />
-      <Btn />
-      <Arrow />
       <Review />
-
       <News />
-
+      <Future />
+      <Footer />
     </>
   );
 }
