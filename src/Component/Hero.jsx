@@ -2,77 +2,163 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <div class="relative h-screen overflow-hidden bg-indigo-900">
-      <img
-        src="/images/landscape/5.svg"
-        class="absolute object-cover w-full h-full"
-      />
-      <div class="absolute inset-0 bg-black opacity-25"></div>
-      <header class="absolute top-0 left-0 right-0 z-20">
-        <nav class="container px-6 py-4 mx-auto md:px-12">
-          <div class="items-center justify-between md:flex">
-            <div class="flex items-center justify-between">
-              <a href="#" class="text-white">
-                <svg
-                  class="w-8 mr-2 fill-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                  data-name="Capa 1"
-                  viewBox="0 0 16.16 12.57"
-                >
-                  <defs></defs>
-                  <path d="M14.02 4.77v7.8H9.33V8.8h-2.5v3.77H2.14v-7.8h11.88z"></path>
-                  <path d="M16.16 5.82H0L8.08 0l8.08 5.82z"></path>
-                </svg>
+    <main class="relative min-h-screen  bg-white dark:bg-gray-800">
+      <header class="z-30 flex items-center w-full h-24 sm:h-32">
+        <div class="container flex items-center justify-between px-6 mx-auto">
+          <div class="text-3xl font-black text-gray-800 uppercase dark:text-white">
+            Watch.ME
+          </div>
+          <div class="flex items-center">
+            <nav class="items-center hidden text-lg text-gray-800 uppercase font-sen dark:text-white lg:flex">
+              <a href="#" class="flex px-6 py-2">
+                Home
               </a>
-              <div class="md:hidden">
-                <button class="text-white focus:outline-none">
-                  <svg
-                    class="w-12 h-12"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M4 6H20M4 12H20M4 18H20"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div class="items-center hidden md:flex">
-              <a class="mx-3 text-lg text-white uppercase cursor-pointer hover:text-gray-300">
-                About us
+              <a href="#" class="flex px-6 py-2">
+                Watch
               </a>
-              <a class="mx-3 text-lg text-white uppercase cursor-pointer hover:text-gray-300">
-                Calendar
+              <a href="#" class="flex px-6 py-2">
+                Product
               </a>
-              <a class="mx-3 text-lg text-white uppercase cursor-pointer hover:text-gray-300">
-                Contact us
+              <a href="#" class="flex px-6 py-2">
+                Contact
+              </a>
+              <a href="#" class="flex px-6 py-2">
+                Carrer
+              </a>
+            </nav>
+            <button class="flex flex-col ml-4 lg:hidden">
+              <span class="w-6 h-1 mb-1 bg-gray-800 dark:bg-white"></span>
+              <span class="w-6 h-1 mb-1 bg-gray-800 dark:bg-white"></span>
+              <span class="w-6 h-1 mb-1 bg-gray-800 dark:bg-white"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <div class="relative z-20 flex items-center overflow-hidden bg-white dark:bg-gray-800">
+        <div class="container relative flex px-6 py-16 mx-auto">
+          <div class="relative z-20 flex flex-col  lg:w-full">
+            <h1 class="flex flex-col text-6xl font-black leading-none text-gray-800 uppercase font-bebas-neue sm:text-8xl dark:text-white">
+              Achieving Financial Indipendence
+            </h1>
+
+            <div class="flex">
+              <a
+                href="#"
+                class="px-4 py-2 mr-4 text-white uppercase bg-pink-500 border-2 border-transparent rounded-lg text-md hover:bg-pink-400"
+              >
+                Get started
+              </a>
+              <a
+                href="#"
+                class="px-4 py-2 text-pink-500 uppercase bg-transparent border-2 border-pink-500 rounded-lg dark:text-white hover:bg-pink-500 hover:text-white text-md"
+              >
+                Read more
               </a>
             </div>
           </div>
-        </nav>
-      </header>
-      <div class="container relative z-10 flex items-center px-6 py-32 mx-auto md:px-12 xl:py-40">
-        <div class="relative z-10 flex flex-col items-start lg:w-3/5 xl:w-2/5">
-          <span class="font-bold text-yellow-400 uppercase">Himalaya</span>
-          <h1 class="mt-4 text-6xl font-bold leading-tight text-white sm:text-7xl">
-            Let yourself be carried
-            <br />
-            by nature
-          </h1>
-          <a
-            href="#"
-            class="block px-4 py-3 mt-10 text-lg font-bold text-gray-800 uppercase bg-white rounded-lg hover:bg-gray-100"
-          >
-            Discover
-          </a>
         </div>
       </div>
-    </div>
+      <div className="container  mx-auto md:px-6">
+        {/* Section: Design Block */}
+        <section className=" bg-yellow-300 rounded-3xl">
+          <div className="px-6  text-center  lg:text-left">
+            <div className="container mx-auto ">
+              <div className="flex grid items-center gap-12 lg:grid-cols-2">
+                <div className="mt-12 lg:mt-0">
+                  <div className="flex items-center justify-between">
+                    <div className="w-1/3">
+                      <h2 className="text-2xl">Strategy Finance</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Enim, nostrum?
+                      </p>
+                    </div>
+                    <div className="w-2/3">
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/new/ecommerce/horizontal/058.jpg"
+                        className="w-full rounded-3xl  p-8"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="mb-12 lg:mb-0">
+                  <div className="mb-4 border-b-rose-950 border-b">
+                    <div className="flex items-center justify-between mb-2">
+                      <h2 className="text-lg font-medium">
+                        How to Manage Finance ?
+                      </h2>
+                      <button className="p-2 focus:outline-none focus:bg-gray-200">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="w-5 h-5"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-10a1 1 0 11-2 0V7a1 1 0 112 0v1zM9 13a1 1 0 012 0v2a1 1 0 11-2 0v-2z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div className="mb-4">
+                  <div className="mb-4 border-b-rose-950 border-b">
+                    <div className="flex items-center justify-between mb-2">
+                      <h2 className="text-lg font-medium">
+                        How to Manage Finance ?
+                      </h2>
+                      <button className="p-2 focus:outline-none focus:bg-gray-200">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="w-5 h-5"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-10a1 1 0 11-2 0V7a1 1 0 112 0v1zM9 13a1 1 0 012 0v2a1 1 0 11-2 0v-2z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  </div>
+
+                  <div className="mb-4">
+                  <div className="mb-4 border-b-rose-950 border-b">
+                    <div className="flex items-center justify-between mb-2">
+                      <h2 className="text-lg font-medium">
+                        How to Manage Finance ?
+                      </h2>
+                      <button className="p-2 focus:outline-none focus:bg-gray-200">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="w-5 h-5"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-10a1 1 0 11-2 0V7a1 1 0 112 0v1zM9 13a1 1 0 012 0v2a1 1 0 11-2 0v-2z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+      </div>
+    </main>
   );
 }
