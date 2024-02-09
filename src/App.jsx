@@ -1,16 +1,19 @@
-import React from "react"
-import Hero from "./Component/Hero"
-import Future from "./Component/Future"
 
+import Future from "./Component/Future"
+import React from "react";
+import News from "./Component/News";
+import Footer from "./Component/Footer"
 
 function App() {
-
   return (
     <>
-{/* <Hero/> */}
-<Future/>
+
+      <Future/>
+      {/* <News /> */}
+      <Footer/>
+
     </>
-  )
+  );
 }
 
-export default App
+export default App;

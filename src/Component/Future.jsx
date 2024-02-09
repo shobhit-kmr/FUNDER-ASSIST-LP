@@ -1,4 +1,6 @@
 import React from "react";
+import Btn  from "../Common/Btn";
+import Arrow from "../Common/Arrow"
 
 const Future = () => {
   return (
@@ -16,31 +18,35 @@ const Future = () => {
                 Lorem ipsum dolor . Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit. Ut tincids lectus, at Lorem ipsum dolor
               </p>
-              <div className="mt-16">
-                <button>Button</button>
-                <button>Button</button>
-              </div>
+              <div className="flex justify-center mt-16">
+          <div>
+            <Btn name="Integrate"/>
+          </div>
+          <div className="mx-3">
+            <Arrow />
+          </div>
+        </div>
             </div>
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
-          <div className="relative w-full h-full rounded-lg">
+          <div className="relative w-full h-full">
             <img
-              className="w-full h-full rounded-[5%]"
+              className="w-full h-full rounded-[30px]"
               src="https://img.freepik.com/free-photo/business-handshake-two-men-demonstrating-their-agreement-sign-agreement-contract-their-firms-companies-enterprises_1423-101.jpg?size=626&ext=jpg&ga=GA1.1.34264412.1701216000&semt=ais"
             />
-            <button className="absolute bottom-20 left-1/2 transform -translate-x-1/2 translate-y-1/2">
-              Button
+            <button className="absolute bottom-8 md:bottom-20 left-1/2 transform -translate-x-1/2 translate-y-1/2">
+            <Btn name="Integrate"/>
             </button>
           </div>
           <div className="relative w-full h-full rounded-lg">
             <img
-              className="w-full h-full rounded-[5%]"
+              className="w-full h-full rounded-[30px]"
               src="https://img.freepik.com/free-photo/business-man-working-office-desktop_23-2148174070.jpg"
             />
-            <button className="absolute bottom-20 left-1/2 transform -translate-x-1/2 translate-y-1/2">
-              Button
+            <button className="absolute bottom-8 md:bottom-20 left-1/2 transform -translate-x-1/2 translate-y-1/2">
+            <Btn name="Integrate"/>
             </button>
           </div>
         </div>
