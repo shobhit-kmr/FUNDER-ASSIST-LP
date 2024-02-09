@@ -15,7 +15,7 @@ export default function Footer() {
                   <div>
                     <button
                       type="button"
-                      class="text-white text-h6 font-bold bg-blue focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80  rounded-full text-lg px-8 py-3 text-center me-2"
+                      className="text-white text-h5 font-bold bg-blue focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80  rounded-full text-lg px-8 py-3 text-center me-2"
                     >
                       Join FinGrow Now
                     </button>

@@ -15,8 +15,6 @@ export default {
       blue: "#003566",
       white:"#ffffff",
       black:"#000000",
-      buttongradient:"",
-      boxgradient:"",
      
     },
     fontFamily: {
@@ -31,6 +29,7 @@ export default {
       'h4': '24px',     // leading 1.9rem 
       'h5': '18px',     // leading 1.5rem 
       'h6': '14px',     // leading 1.1rem 
+      
 
       // font-semibold
       'p': '16px',      // leading 1.5rem 
