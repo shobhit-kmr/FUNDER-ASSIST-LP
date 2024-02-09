@@ -12,7 +12,7 @@ function App() {
       <Services/>
       <About />
       
-      <News />
+      {/* <News /> */}
 
     </>
   );

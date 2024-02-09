@@ -4,8 +4,8 @@ import Btn from "../Common/Btn";
 export default function Hero() {
   return (
     <main class="relative min-h-screen  bg-blue ">
-      <header class="z-30 flex items-center w-full h-24 sm:h-32">
-        <div class="container flex items-center justify-between px-6 mx-auto">
+      <header class="z-30  w-full h-24 sm:h-32 ">
+        <div class="lg:container flex items-center justify-between px-6 mx-auto ">
           <div class="text-3xl font-black text-gray-800 uppercase dark:text-white">
             Watch.ME
           </div>
@@ -36,10 +36,10 @@ export default function Hero() {
         </div>
       </header>
       <div class="relative z-20 flex items-center overflow-hidden bg-blue dark:bg-gray-800">
-        <div class="container relative flex px-6 py-16 mx-auto">
+        <div class="lg:container relative flex px-6 py-8  mx-auto ">
           <div class="relative z-20 flex flex-col  lg:w-full">
-            <h1 class="flex flex-col text-h font-black leading-none text-gray-800 uppercase font-bebas-neue sm:text-8xl dark:text-white">
-              Achieving Financial Indipendence
+            <h1 class="flex flex-col md:text-h text-h1 font-bold leading-none text-gray-800   text-white">
+              Archieving Financial Independent
             </h1>
 
             <div class="flex">
