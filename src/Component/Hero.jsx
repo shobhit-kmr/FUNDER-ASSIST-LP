@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <main class="relative min-h-screen  bg-white dark:bg-gray-800">
+    <main class="relative min-h-screen  bg-blue">
       <header class="z-30 flex items-center w-full h-24 sm:h-32">
         <div class="container flex items-center justify-between px-6 mx-auto">
           <div class="text-3xl font-black text-gray-800 uppercase dark:text-white">
@@ -34,10 +34,10 @@ export default function Hero() {
           </div>
         </div>
       </header>
-      <div class="relative z-20 flex items-center overflow-hidden bg-white dark:bg-gray-800">
+      <div class="relative z-20 flex items-center overflow-hidden bg-blue dark:bg-gray-800">
         <div class="container relative flex px-6 py-16 mx-auto">
           <div class="relative z-20 flex flex-col  lg:w-full">
-            <h1 class="flex flex-col text-6xl font-black leading-none text-gray-800 uppercase font-bebas-neue sm:text-8xl dark:text-white">
+            <h1 class="flex flex-col text-h font-black leading-none text-gray-800 uppercase font-bebas-neue sm:text-8xl dark:text-white">
               Achieving Financial Indipendence
             </h1>
 
@@ -60,7 +60,7 @@ export default function Hero() {
       </div>
       <div className="container  mx-auto md:px-6">
         {/* Section: Design Block */}
-        <section className=" bg-yellow-300 rounded-3xl">
+        <section className=" bg-yellow rounded-3xl">
           <div className="px-6  text-center  lg:text-left">
             <div className="container mx-auto ">
               <div className="flex grid items-center gap-12 lg:grid-cols-2">
