@@ -5,9 +5,9 @@ import Arrow from "../Common/Arrow";
 export default function News() {
   return (
     <section className="mx-auto">
-      <div className="mx-auto container flex justify-between items-center my-10">
-        <h1 className="text-h1 font-bold text-yellow w-96 leading-[4.8rem]">From The News</h1>
-        <div className="flex">
+      <div className="md:mx-4 mx-10 lg:mx-auto lg:container lg:flex justify-between items-center my-10">
+        <h1 className=" text-h1 font-bold text-yellow leading-[4.8rem]">From The News</h1>
+        <div className="flex mx-4 my-4">
           <div>
             <Btn />
           </div>
@@ -16,9 +16,9 @@ export default function News() {
           </div>
         </div>
       </div>
-      <div className=" container mx-auto">
-        <div className="mx-auto grid grid-cols-3 "> 
-          <div className="h-[70vh] w-96 bg-orange relative rounded-3xl mx-auto">
+      <div className="container mx-auto">
+        <div className="mx-auto grid lg:grid-cols-3  md:grid-cols-2 gap-10 "> 
+          <div className="lg:h-[70vh] h-[45vh] md:w-96 w-full bg-orange relative rounded-3xl mx-auto">
             <img
               src="https://media.macphun.com/img/uploads/customer/how-to/608/15542038745ca344e267fb80.28757312.jpg?q=85&w=1340"
               className=" object-cover absolute w-full h-full object-center rounded-3xl"
@@ -38,7 +38,7 @@ export default function News() {
               </div>
             </div>
           </div>
-          <div className="h-[70vh] w-96 bg-orange relative rounded-3xl mx-auto">
+          <div className="lg:h-[70vh] h-[45vh]  md:w-96 w-full bg-orange relative rounded-3xl ">
             <img
               src="https://media.macphun.com/img/uploads/customer/how-to/608/15542038745ca344e267fb80.28757312.jpg?q=85&w=1340"
               className=" object-cover absolute w-full h-full object-center rounded-3xl"
@@ -58,7 +58,7 @@ export default function News() {
               </div>
             </div>
           </div>
-          <div className="h-[70vh] w-96 bg-orange relative rounded-3xl mx-auto">
+          <div className="lg:h-[70vh] h-[45vh]  md:w-96 w-full bg-orange relative rounded-3xl ">
             <img
               src="https://media.macphun.com/img/uploads/customer/how-to/608/15542038745ca344e267fb80.28757312.jpg?q=85&w=1340"
               className=" object-cover absolute w-full h-full object-center rounded-3xl"
