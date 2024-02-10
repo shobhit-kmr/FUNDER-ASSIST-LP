@@ -10,13 +10,13 @@ const CompanyHighlight = () => {
   useEffect(() => {
     const targetCount1 = 450;
     const targetCount2 = 250;
-    const initialSpeed = 20; // Adjust the initial speed
+    const initialSpeed = 20; 
     const slowDownThreshold = 0.9;
     const step = 3;
 
     const animateCounter = (target, setCount) => {
       let start = 0;
-      const duration = 1000; // Adjust the duration
+      const duration = 1000; 
       const interval = duration / (target / initialSpeed);
 
       const counterInterval = setInterval(() => {
@@ -62,7 +62,7 @@ const CompanyHighlight = () => {
       {/* ************About Starts ************** */}
       <div className="container-fluid h-max font-poppins bg-blue py-12 px-6 box-border">
         <div className="grid lg:grid-cols-8 grid-cols-4 h-max w-full lg:container gap-3 mx-auto bg-yellow rounded-3xl">
-          <div className="bg-red col-span-4 border-l-2 border-opacity-10 border-dashed lg:py-16 py-6 border-white px-6 space-y-8">
+          <div className="bg-red col-span-4  lg:py-16 py-6 px-6 space-y-8">
             <div className="flex flex-col items-center justify-center  bg-gray-200">
               <div className="  ">
                 <h1 className="lg:text-h1 md:text-h2 text-h3 text-blue font-semibold mb-6 leading-tight">
@@ -87,17 +87,17 @@ const CompanyHighlight = () => {
           <div className="col-span-4 bg-gray">
             <div className="">
               <div className="grid gap-y-6">
-                <div className="p-4 border-white border-dashed border-l-2 border-opacity-10 py-8 bg-gray md:w-2/3">
-                  <div className=" border-b-2 border-blue pb-5 pt-6 bg-gray">
-                    <div className=" border-white">
+                <div className="p-4 mb-10  md:w-2/3 ">
+                  <div className=" border-b-2 border-blue pb-5 pt-6">
+                    <div>
                       <p className="text-h1 text-blue font-bold">{count3}M</p>
                       <p className="text-blue text-h5 uppercase font-bold">
                         Our users around the world
                       </p>
                     </div>
                   </div>
-                  <div className=" border-b-2 border-blue pb-5 pt-6 bg-gray">
-                    <div className="border-white ">
+                  <div className=" border-b-2 border-blue pb-5 pt-6">
+                    <div>
                       <p className="text-h1 text-blue font-bold">{count1}M</p>
                       <p className="text-blue uppercase font-bold">
                         We generated revenue in First Quarter
@@ -106,7 +106,7 @@ const CompanyHighlight = () => {
                   </div>
 
                   <div className=" border-b-2 border-blue pb-5 pt-6 bg-gray">
-                    <div className="">
+                    <div>
                       <p className="text-h1 text-blue font-bold ">{count2}%</p>
                       <p className="text-blue uppercase font-bold">
                         Our investment Growth Rate this year

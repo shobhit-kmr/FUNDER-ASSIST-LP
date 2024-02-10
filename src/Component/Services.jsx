@@ -16,7 +16,7 @@ export default function Services() {
                   Our Services for <br className="2xl:block hidden" /> Your Finance
                   <br className="2xl:block hidden" /> Problem
                 </h1>
-                <p className="text-lg mb-4">
+                <p className="text-lg mb-4 md:w-[70%]">
                   Sed ac risus non odio consectetur iaculis. Phasellus varius
                   sapien at leo accumsan tincidunt. Nullam pharetra, nunc sed
                   convallis lobortis, odio leo vulputate libero, sed rhoncus mi

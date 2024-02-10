@@ -4,6 +4,7 @@ import Arrow from "../Common/Arrow";
 import logo from "../Images/Logo.png";
 
 
+
 export default function Hero() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -15,7 +16,7 @@ export default function Hero() {
       {/* ************Header Starts************** */}
       <nav className="bg-blue">
         <div className="md:container mx-auto  sm:px-2 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-20">
             {/* Image on the left */}
             <div className="flex-shrink-0">
               <img
@@ -161,22 +162,22 @@ export default function Hero() {
             <span className="text-h4 mb-4">More People</span>
           </div>
           <div className="flex items-center xl:justify-center justify-start ">
-            <div className="h-20 my-12 flex items-center -space-x-6">
-              <div className="w-24 h-24 bg-blue rounded-full inline-block border-4 border-yellow">
+            <div className="h-24 my-12 flex items-center -space-x-6">
+              <div className="w-24 h-24 rounded-full inline-block border-4 border-yellow overflow-hidden flex items-center justify-center">
                 <img
                   src="https://source.unsplash.com/24x24/?apple"
                   alt="Apple"
-                  className="w-full h-full rounded-full object-contain "
+                  className="w-full h-full rounded-full object-cover"
                 />
               </div>
-              <div className="w-24 h-24 bg-orange rounded-full inline-block ml-4 border-4 border-yellow ">
+              <div className="w-24 h-24 bg-orange rounded-full inline-block border-4 border-yellow overflow-hidden">
                 <img
                   src="https://source.unsplash.com/24x24/?ball"
                   alt="Ball"
                   className="w-full h-full rounded-full object-cover"
                 />
               </div>
-              <div className="w-24 h-24 bg-black rounded-full inline-block ml-4 border-4 border-yellow">
+              <div className="w-24 h-24 bg-black rounded-full inline-block border-4 border-yellow overflow-hidden">
                 <img
                   src="https://source.unsplash.com/24x24/?cat"
                   alt="Cat"
