@@ -23,6 +23,7 @@ export default {
       poppins: ['Poppins', 'sans-serif'],
     },
     fontSize: {
+      // font-bold
       'h': '128px',    // leading 9rem 
       'h1': '64px',    // leading 4.8 rem something
       'h2': '48px',    // leading 4.5rem 
@@ -30,7 +31,11 @@ export default {
       'h4': '24px',     // leading 1.9rem 
       'h5': '18px',     // leading 1.5rem 
       'h6': '14px',     // leading 1.1rem 
+
+      // font-semibold
       'p': '16px',      // leading 1.5rem 
+
+
 
     },
     extend: {},
