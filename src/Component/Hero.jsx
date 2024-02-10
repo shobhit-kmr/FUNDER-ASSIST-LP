@@ -131,17 +131,17 @@ export default function Hero() {
 
 
       {/* ************Bold Text Section Starts ************** */}
-      <div class="flex items-center bg-blue dark:bg-gray-800 lg:container mx-auto">
-        <div class="xl:container relative flex px-6 py-8  xl:mx-auto  ">
+      <div class="flex items-center bg-blue  dark:bg-gray-800 lg:container mx-auto">
+        <div class="xl:container relative flex px-6 xl:mt-36 md:mt-20 mt-16   xl:mx-auto  ">
           <div class="relative z-20 flex flex-col ">
-            <h1 class="flex flex-col xl:text-h md:text-h1 text-h2 font-semibold leading-none text-gray-800   text-white">
+            <h1 class="flex flex-col xl:text-h md:text-h1 text-h2   font-semibold leading-none text-gray-800   text-white">
               Archieving Financial
             </h1>
             <span class=" xl:flex items-center justify-start gap-8">
               <div className="">
-                <span className="xl:text-h md:text-h1 text-h2 font-semibold leading-none text-gray-800   text-white">Independent</span>
+                <span className=" xl:text-h md:text-h1 text-h2   font-semibold leading-none text-gray-800   text-white">Independent</span>
               </div>
-              <div className=" lg:mt-auto pt-4 flex items-center ml-auto mb-2  ">
+              <div className=" lg:mt-auto pt-4 flex items-center ml-auto mb-2 mt-2 ">
                 <Btn name="Get Started" />
                 <Arrow />
               </div>
@@ -153,8 +153,8 @@ export default function Hero() {
 
 
       {/* ************Connect With More People Starts ************** */}
-      <div className="grid xl:grid-cols-2 grid-cols-1 container lg:mx-auto h-min px-2">
-        <div></div>
+      <div className="grid xl:grid-cols-2 grid-cols-1 container lg:mx-auto mx-3 h-min px-2">
+        <div className="md:block hidden"></div>
         <div className="flex xl:flex-row flex-col  xl:items-center xl:justify-start justify-start">
 
           <div className="mx-2 text-yellow">
@@ -162,7 +162,7 @@ export default function Hero() {
             <span className="text-h4 mb-4">More People</span>
           </div>
           <div className="flex items-center xl:justify-center justify-start ">
-            <div className="h-24 my-12 flex items-center -space-x-6">
+            <div className="h-24 lg:my-12 my-3 flex items-center -space-x-6">
               <div className="w-24 h-24 rounded-full inline-block border-4 border-yellow overflow-hidden flex items-center justify-center">
                 <img
                   src="https://source.unsplash.com/24x24/?apple"
@@ -192,16 +192,16 @@ export default function Hero() {
 
 
       {/* ************Strategy Finance Starts ************** */}
-      <div className="lg:container  mx-auto lg:px-6 px-2 py-12">
+      <div className="lg:container  mx-auto lg:px-6 px-2 lg:py-12 py-8">
         <section className=" bg-yellow  rounded-3xl ">
-          <div className="px-6  text-center  lg:text-left">
+          <div className="lg:px-6  px-4 text-center  lg:text-left">
             <div className="lg:container mx-auto ">
               <div className="flex grid items-center lg:gap-12 gap-4 md:grid-cols-12">
                 <div className=" lg:mt-0 md:col-span-6">
                   <div className="flex md:flex-row flex-col items-center justify-between">
-                    <div className="md:w-1/3 w-full text-blue">
-                      <h2 className="lg:text-h3 text-h4 font-bold leading-tight">Strategy Finance</h2>
-                      <p>
+                    <div className="md:w-1/3 w-full text-blue md:py-0 py-4">
+                      <h2 className="lg:text-h3 text-h4 font-bold leading-tight  text-start">Strategy Finance</h2>
+                      <p className=" text-start">
                         Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit.
                       </p>
@@ -209,13 +209,13 @@ export default function Hero() {
                     <div className="md:w-2/3 w-full">
                       <img
                         src="https://mdbcdn.b-cdn.net/img/new/ecommerce/horizontal/058.jpg"
-                        className="h-56 rounded-3xl mx-auto  xl:p-8 p-4"
+                        className="lg:w-full w-72  rounded-3xl lg:mx-auto mr-auto  xl:p-8 md:p-4"
                         alt=""
                       />
                     </div>
                   </div>
                 </div>
-                <div className=" lg:mb-0 md:col-span-6 xl:p-12 md:p-4 ">
+                <div className=" lg:mb-0 md:col-span-6 xl:p-12 md:p-6 ">
                   <div className="mb-4 border-b-blue border-b">
                     <div className="flex flex-wrap items-center justify-between mb-2">
                       <h2 className="lg:text-h4 text-h5 text-blue font-bold">
@@ -236,7 +236,7 @@ export default function Hero() {
                     </div>
                   </div>
 
-                  <div className="lg:mb-4 mb-12">
+                  <div className="lg:mb-4 ">
                     <div className="mb-4 border-b-blue border-b">
                       <div className="flex items-center justify-between mb-2">
                         <h2 className="lg:text-h4 text-h5 text-blue font-bold">

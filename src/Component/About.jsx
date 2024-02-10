@@ -61,8 +61,8 @@ const CompanyHighlight = () => {
     <>
       {/* ************About Starts ************** */}
       <div className="container-fluid h-max font-poppins bg-blue py-12 px-6 box-border">
-        <div className="grid lg:grid-cols-8 grid-cols-4 h-max w-full lg:container gap-3 mx-auto bg-yellow rounded-3xl">
-          <div className="bg-red col-span-4  lg:py-16 py-6 px-6 space-y-8">
+        <div className="grid lg:grid-cols-12 grid-cols-4 h-max w-full lg:container gap-3 mx-auto bg-yellow rounded-3xl md:p-16 p-4">
+          <div className="bg-red col-span-7  lg:py-16 py-6 px-6 space-y-8">
             <div className="flex flex-col items-center justify-center  bg-gray-200">
               <div className="  ">
                 <h1 className="lg:text-h1 md:text-h2 text-h3 text-blue font-semibold mb-6 leading-tight">
@@ -84,11 +84,11 @@ const CompanyHighlight = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-4 bg-gray">
+          <div className="col-span-5 bg-gray">
             <div className="">
               <div className="grid gap-y-6">
-                <div className="p-4 mb-10  md:w-2/3 ">
-                  <div className=" border-b-2 border-blue pb-5 pt-6">
+                <div className="p-4 mb-10  m ">
+                  <div className=" border-b-2 border-blue pb-5 md:pt-6">
                     <div>
                       <p className="text-h1 text-blue font-bold">{count3}M</p>
                       <p className="text-blue text-h5 uppercase font-bold">
