@@ -4,10 +4,10 @@ import Services from "./Component/Services";
 import News from "./Component/News";
 import About from "./Component/About";
 
-
 function App() {
   return (
     <>
+      
       <Hero/>
       <Services/>
       <About />
