@@ -24,30 +24,28 @@ export default function Hero() {
                 alt="Logo"
               />
             </div>
-
-            {/* Nav menu on the right for medium screens and above */}
             <div className="hidden md:flex items-center space-x-4">
               <a
                 href="#"
-                className="px-3 py-2 rounded-md text-h4 font-medium text-white hover:text-yellow"
+                className="px-3 py-2 text-h4 font-medium text-white hover:text-yellow"
               >
                 Home
               </a>
               <a
                 href="#"
-                className="px-3 py-2 rounded-md text-h4 font-medium text-white hover:text-yellow"
+                className="px-3 py-2 text-h4 font-medium text-white hover:text-yellow"
               >
                 About Us
               </a>
               <a
                 href="#"
-                className="px-3 py-2 rounded-md text-h4 font-medium text-white hover:text-yellow"
+                className="px-3 py-2 text-h4 font-medium text-white hover:text-yellow"
               >
                 Pages
               </a>
               <a
                 href="#"
-                className="px-3 py-2 rounded-md text-h4 font-medium text-white hover:text-yellow"
+                className="px-3 py-2 text-h4 font-medium text-white hover:text-yellow"
               >
                 Contact Us
               </a>
@@ -58,7 +56,7 @@ export default function Hero() {
               <button
                 onClick={toggleNavbar}
                 type="button"
-                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white "
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
@@ -199,7 +197,7 @@ export default function Hero() {
             <div className="lg:container mx-auto ">
               <div className="flex grid items-center lg:gap-12 gap-4 md:grid-cols-12">
                 <div className=" lg:mt-0 md:col-span-6">
-                  <div className="flex sm:flex-row flex-col items-center justify-between">
+                  <div className="flex md:flex-row flex-col items-center justify-between">
                     <div className="md:w-1/3 w-full text-blue">
                       <h2 className="lg:text-h3 text-h4 font-bold leading-tight">Strategy Finance</h2>
                       <p>
