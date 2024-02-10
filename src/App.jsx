@@ -1,7 +1,7 @@
 import React from "react";
-// import News from "./Component/News";
+import News from "./Component/News";
 import Future from "./Component/Future";
-// import Review from "./Component/Review";
+import Review from "./Component/Review";
 import Footer from "./Component/Footer";
 import Hero from "./Component/Hero";
 import Services from "./Component/Services";
@@ -15,8 +15,8 @@ function App() {
       <Services />
       <About />
       <Future />
-      {/* <Review /> */}
-      {/* <News /> */}
+      <Review />
+      <News />
       <Footer />
     </>
   );
