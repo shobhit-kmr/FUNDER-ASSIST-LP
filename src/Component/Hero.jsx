@@ -15,7 +15,7 @@ export default function Hero() {
     <main class="bg-blue">
       {/* ************Header Starts************** */}
       <nav className="bg-blue">
-        <div className="md:container mx-auto  sm:px-2 lg:px-8">
+        <div className="lg:container mx-auto  sm:px-2 xl:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Image on the left */}
             <div className="flex-shrink-0">

@@ -61,7 +61,7 @@ const CompanyHighlight = () => {
     <>
       {/* ************About Starts ************** */}
       <div className="container-fluid h-max font-poppins bg-blue py-12 px-6 box-border">
-        <div className="grid lg:grid-cols-12 grid-cols-4 h-max w-full lg:container gap-3 mx-auto bg-yellow rounded-3xl md:p-16 p-4">
+        <div className="grid lg:grid-cols-12 grid-cols-4 h-max w-full lg:container gap-3 mx-auto bg-yellow rounded-3xl lg:p-16 md:p-6 p-3">
           <div className="bg-red col-span-7  lg:py-16 py-6 px-6 space-y-8">
             <div className="flex flex-col items-center justify-center  bg-gray-200">
               <div className="  ">
