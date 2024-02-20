@@ -66,15 +66,11 @@ const CompanyHighlight = () => {
             <div className="flex flex-col items-center justify-center  bg-gray-200">
               <div className="  ">
                 <h1 className="lg:text-h1 md:text-h2 text-h3 text-blue font-semibold mb-6 leading-tight">
-                  Get To <br className="xl:block hidden" /> Know More
-                  <br className="xl:block hidden" /> About Us
+                Discover Funder Assist
                 </h1>
 
                 <p className="text-lg mb-4">
-                  Sed ac risus non odio consectetur iaculis. Phasellus varius
-                  sapien at leo accumsan tincidunt. Nullam pharetra, nunc sed
-                  convallis lobortis, odio leo vulputate libero, sed rhoncus mi
-                  quam ut turpis.
+                Learn more about how Funder Assist is changing the game for agents in the funding sector. More than just a service, we're a partner in your professional journey!
                 </p>
 
                 <div className="flex items-center justify-start">

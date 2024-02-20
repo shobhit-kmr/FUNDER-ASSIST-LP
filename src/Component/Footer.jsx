@@ -9,7 +9,7 @@ export default function Footer() {
             <div className="w-full px-4">
               <div className="mx-auto mb-12  text-center lg:mb-20 md:px-10 my-24">
                 <h1 className="mb-3 lg:text-h1 md:text-h2 text-h3 font-bold leading-[1.2] text-blue  xl:mx-64">
-                  Connect Your Finance With FinGrow
+                Join Funder Assist and Transform Your Financial Data Management
                 </h1>
                 <div className="flex justify-center mt-16">
                   <div>
@@ -17,7 +17,7 @@ export default function Footer() {
                       type="button"
                       class="text-white text-h6 font-bold bg-blue focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80  rounded-full text-lg px-8 py-3 text-center me-2"
                     >
-                      Join FinGrow Now
+                     Get Started Now
                     </button>
                   </div>
                 </div>

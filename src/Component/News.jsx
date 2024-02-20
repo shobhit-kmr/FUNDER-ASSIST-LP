@@ -6,7 +6,7 @@ export default function News() {
   return (
     <section className="mx-auto">
       <div className="md:mx-4 mx-10 lg:mx-auto lg:container lg:flex justify-between items-center my-10">
-        <h1 className=" text-h1 font-bold text-yellow leading-[4.8rem]">From The News</h1>
+        <h1 className=" text-h1 font-bold text-yellow leading-[4.8rem]">Latest in Data and Funding</h1>
         <div className="flex mx-4 my-4">
           <div>
             <Btn />

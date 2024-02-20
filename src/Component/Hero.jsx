@@ -135,11 +135,11 @@ export default function Hero() {
         <div class="xl:container relative flex px-6 xl:mt-36 md:mt-20 mt-16   xl:mx-auto  ">
           <div class="relative z-20 flex flex-col ">
             <h1 class="flex flex-col xl:text-h md:text-h1 text-h2   font-semibold leading-none text-gray-800   text-white">
-              Archieving Financial
+            Empowering Agents with Simplified Data
             </h1>
             <span class=" xl:flex items-center justify-start gap-8">
               <div className="">
-                <span className=" xl:text-h md:text-h1 text-h2   font-semibold leading-none text-gray-800   text-white">Independent</span>
+                <span className=" xl:text-h md:text-h1 text-h2   font-semibold leading-none text-gray-800 text-white"> Management</span>
               </div>
               <div className=" lg:mt-auto pt-4 flex items-center ml-auto mb-2 mt-2 ">
                 <Btn name="Get Started" />
@@ -158,8 +158,8 @@ export default function Hero() {
         <div className="flex xl:flex-row flex-col  xl:items-center xl:justify-start justify-start">
 
           <div className="mx-2 text-yellow">
-            <span className="text-h4 font-bold mb-4">Connect With :</span><br />
-            <span className="text-h4 mb-4">More People</span>
+            <span className="text-h4 font-bold mb-4">Funder Assist :</span><br />
+            <span className="text-h4 mb-4">Where Funding  Meets Efficiency</span>
           </div>
           <div className="flex items-center xl:justify-center justify-start ">
             <div className="h-24 lg:my-12 my-3 flex items-center -space-x-6">
@@ -200,10 +200,9 @@ export default function Hero() {
                 <div className=" lg:mt-0 md:col-span-6">
                   <div className="flex md:flex-row flex-col items-center justify-between">
                     <div className="md:w-1/3 w-full text-blue md:py-0 py-4">
-                      <h2 className="lg:text-h3 text-h4 font-bold leading-tight  text-start">Strategy Finance</h2>
+                      <h2 className="lg:text-h3 text-h4 font-bold leading-tight  text-start">Strategic Data Oversight</h2>
                       <p className=" text-start">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit.
+                      Gain control over your funding data with our easy-to-use tools. Funder Assist helps you keep track of customer records with ease, making financial decision-making clearer and more accurate
                       </p>
                     </div>
                     <div className="md:w-2/3 w-full">
@@ -219,7 +218,7 @@ export default function Hero() {
                   <div className="mb-4 border-b-blue border-b">
                     <div className="flex flex-wrap items-center justify-between mb-2">
                       <h2 className="lg:text-h4 text-h5 text-blue font-bold">
-                        How to Manage Finance ?
+                      Data Handling Made Easy
                       </h2>
                       <Arrow />
                     </div>
@@ -229,7 +228,7 @@ export default function Hero() {
                     <div className="mb-4 border-b-blue border-b">
                       <div className="flex items-center justify-between mb-2">
                         <h2 className="lg:text-h4 text-h5 text-blue font-bold">
-                          How long will finance grow ?
+                        Data Growth, Handled
                         </h2>
                         <Arrow />
                       </div>
@@ -240,7 +239,7 @@ export default function Hero() {
                     <div className="mb-4 border-b-blue border-b">
                       <div className="flex items-center justify-between mb-2">
                         <h2 className="lg:text-h4 text-h5 text-blue font-bold">
-                          Whether it can be repeated ?
+                        Consistent Data Management
                         </h2>
                         <Arrow />
                       </div>
