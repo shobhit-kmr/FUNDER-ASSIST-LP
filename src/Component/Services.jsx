@@ -7,7 +7,7 @@ export default function Services() {
     <>
       {/* Services Section */}
       <div className="bg-white box-border">
-        <div className="lg:container py-16 mx-auto grid md:grid-cols-12 font-poppins">
+        <div className="lg:container py-16 mx-auto grid md:grid-cols-12">
 
           {/* First Block - Main Content */}
           <div className="xl:col-span-8 md:col-span-6 p-4">
@@ -16,7 +16,7 @@ export default function Services() {
                 <h1 className="xl:text-h1 text-h2 lg:leading-normal leading-tight text-yellow font-bold mb-6">
                 Custom Data Solutions
                 </h1>
-                <p className="text-lg mb-4 py-6 md:w-[70%] font-semibold">
+                <p className="font-medium text-p mb-4 py-6 md:w-[70%] ">
                 Every funding situation is unique. That's why Funder Assist offers tailored services to solve your specific data challenges, so you can focus on providing excellent financial support to your clients
                 </p>
                 <div className="flex items-center justify-start">
@@ -39,11 +39,12 @@ export default function Services() {
                   </h3>
                 </div>
                 <div className="grid grid-flow-col">
-                  <p className="py-4 w-[95%]">
+                  <p className="py-4 w-[95%] font-medium text-p">
                   Your clients' trust is paramount. Funder Assist ensures their data is protected with top-notch security measures. Rest easy knowing every piece of information is safe
                   </p>
                   <div className="w-12 h-12 my-auto">
                     <Arrow />
+                    
                   </div>
                 </div>
               </div>
@@ -57,7 +58,7 @@ export default function Services() {
                   </h3>
                 </div>
                 <div className="grid grid-flow-col">
-                  <p className="py-4 w-[95%]">
+                  <p className="py-4 w-[95%] font-medium text-p">
                   Harness the power of data to uncover new funding opportunities. Funder Assist's insights can guide you to smarter, more effective financial strategies
                   </p>
                   <div className="w-12 h-12 my-auto">
@@ -75,7 +76,7 @@ export default function Services() {
                   </h3>
                 </div>
                 <div className="grid grid-flow-col">
-                  <p className="py-4 w-[95%]">
+                  <p className="py-4 w-[95%] font-medium text-p">
                   Data informs growth. Use Funder Assist to identify the right paths for scaling your business and supporting more customers with your funding solutions
                   </p>
                   <div className="w-12 h-12 my-auto">
@@ -93,7 +94,7 @@ export default function Services() {
                   </h3>
                 </div>
                 <div className="grid grid-flow-col">
-                  <p className="py-4 sm:w-[95%]">
+                  <p className="py-4 sm:w-[95%] font-medium text-p">
                   Questions or concerns? Our round-the-clock service means we're always ready to help you navigate any data management challenges you face
                   </p>
                   <div className="w-12 h-12 my-auto">

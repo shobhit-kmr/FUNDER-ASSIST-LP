@@ -1,9 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Btn from "../Common/Btn";
 import Arrow from "../Common/Arrow";
 import logo from "../Images/Logo.png";
 
+const Accordion = ({ title, children }) => {
+  const [isOpen, setIsOpen] = useState(false);
 
+  const toggleAccordion = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div className="mb-4">
+      <div className="mb-4 border-b-blue border-b">
+        <div
+          className="flex items-center justify-between mb-2 cursor-pointer"
+          onClick={toggleAccordion}
+        >
+          <h2 className="lg:text-h4 text-h5 text-blue font-bold">{title}</h2>
+          <Arrow isOpen={isOpen} />
+        </div>
+      </div>
+      {isOpen && <div>{children}</div>}
+    </div>
+  );
+};
 
 export default function Hero() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,21 +32,36 @@ export default function Hero() {
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
+
+  const [activeIndex, setActiveIndex] = useState(null);
+  const [contentHeight, setContentHeight] = useState(0);
+  const contentRef = useRef(null);
+
+  const toggleAccordion = (index) => {
+    if (activeIndex === index) {
+      setActiveIndex(null);
+    } else {
+      setActiveIndex(index);
+    }
+  };
+
+  useEffect(() => {
+    if (contentRef.current) {
+      setContentHeight(contentRef.current.scrollHeight);
+    }
+  }, [activeIndex]);
+
   return (
-    <main class="bg-blue">
+    <main class="bg-blue text-balance">
       {/* ************Header Starts************** */}
       <nav className="bg-blue">
         <div className="lg:container mx-auto  sm:px-2 xl:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Image on the left */}
             <div className="flex-shrink-0">
-              <img
-                className="h-8 w-auto"
-                src={logo}
-                alt="Logo"
-              />
+              <img className="h-8 w-auto" src={logo} alt="Logo" />
             </div>
-            <div className="hidden md:flex items-center space-x-4">
+            <div className="hidden md:flex items-center font-poppins space-x-4">
               <a
                 href="#"
                 className="px-3 py-2 text-h4 font-medium text-white hover:text-yellow"
@@ -61,9 +97,9 @@ export default function Hero() {
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
-                <span className="sr-only">Open main menu</span>
+              
                 <svg
-                  className={`${isOpen ? 'hidden' : 'block'} h-6 w-6`}
+                  className={`${isOpen ? "hidden" : "block"} h-6 w-6`}
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -78,7 +114,7 @@ export default function Hero() {
                   />
                 </svg>
                 <svg
-                  className={`${isOpen ? 'block' : 'hidden'} h-6 w-6`}
+                  className={`${isOpen ? "block" : "hidden"} h-6 w-6`}
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -98,8 +134,13 @@ export default function Hero() {
         </div>
 
         {/* Mobile menu for small screens */}
-        <div className={`${isOpen ? 'block' : 'hidden'} md:hidden absolute z-50 bg-blue w-full `} id="mobile-menu">
-          <div className="px-2 pt-2 pb-3 space-y-1">
+        <div
+          className={`${
+            isOpen ? "block" : "hidden"
+          } md:hidden absolute z-50 bg-blue w-full `}
+          id="mobile-menu"
+        >
+          <div className="px-2 pt-2 pb-3 space-y-1 font-poppins">
             <a
               href="#"
               className="block px-3 py-2 font-medium text-white hover:text-white hover:bg-yellow"
@@ -129,17 +170,19 @@ export default function Hero() {
       </nav>
       {/* ************Header Ends************** */}
 
-
       {/* ************Bold Text Section Starts ************** */}
       <div class="flex items-center bg-blue  dark:bg-gray-800 lg:container mx-auto">
         <div class="xl:container relative flex px-6 xl:mt-36 md:mt-20 mt-16   xl:mx-auto  ">
           <div class="relative z-20 flex flex-col ">
-            <h1 class="flex flex-col xl:text-h md:text-h1 text-h2   font-semibold leading-none text-gray-800   text-white">
-            Empowering Agents with Simplified Data
+            <h1 class="flex flex-col xl:text-h md:text-h1 text-h3  font-semibold leading-tight   text-white">
+              Empowering Agents <br className="2xl:block hidden" /> with Simplified Data
             </h1>
             <span class=" xl:flex items-center justify-start gap-8">
               <div className="">
-                <span className=" xl:text-h md:text-h1 text-h2   font-semibold leading-none text-gray-800 text-white"> Management</span>
+                <span className=" xl:text-h md:text-h1   sm:text-h3  font-semibold leading-none text-white">
+                  {" "}
+                  Management
+                </span>
               </div>
               <div className=" lg:mt-auto pt-4 flex items-center ml-auto mb-2 mt-2 ">
                 <Btn name="Get Started" />
@@ -151,15 +194,14 @@ export default function Hero() {
       </div>
       {/* ************Bold Text Section Ends ************** */}
 
-
       {/* ************Connect With More People Starts ************** */}
       <div className="grid xl:grid-cols-2 grid-cols-1 container lg:mx-auto mx-3 h-min px-2">
         <div className="md:block hidden"></div>
         <div className="flex xl:flex-row flex-col  xl:items-center xl:justify-start justify-start">
-
           <div className="mx-2 text-yellow">
-            <span className="text-h4 font-bold mb-4">Funder Assist :</span><br />
-            <span className="text-h4 mb-4">Where Funding  Meets Efficiency</span>
+            <span className="text-h4 font-bold mb-4">Funder Assist :</span>
+            <br />
+            <span className="text-h4 mb-4">Where Funding Meets Efficiency</span>
           </div>
           <div className="flex items-center xl:justify-center justify-start ">
             <div className="h-24 lg:my-12 my-3 flex items-center -space-x-6">
@@ -190,59 +232,124 @@ export default function Hero() {
       </div>
       {/* ************Connect With More People Ends ************** */}
 
-
       {/* ************Strategy Finance Starts ************** */}
-      <div className="lg:container  mx-auto lg:px-6 px-2 lg:py-12 py-8">
-        <section className=" bg-yellow  rounded-3xl ">
-          <div className="lg:px-6  px-4 text-center  lg:text-left">
+      <div className="lg:container  mx-auto px-6 2xl:px-6  lg:py-12 py-8">
+        <section className=" bg-gradient-to-r from-yellow to-orange  rounded-3xl ">
+          <div className="lg:px-6  sm:px-4 px-2 text-center  lg:text-left">
             <div className="lg:container mx-auto ">
-              <div className="flex grid items-center lg:gap-12 gap-4 md:grid-cols-12">
-                <div className=" lg:mt-0 md:col-span-6">
-                  <div className="flex md:flex-row flex-col items-center justify-between">
-                    <div className="md:w-1/3 w-full text-blue md:py-0 py-4">
-                      <h2 className="lg:text-h3 text-h4 font-bold leading-tight  text-start">Strategic Data Oversight</h2>
-                      <p className=" text-start">
-                      Gain control over your funding data with our easy-to-use tools. Funder Assist helps you keep track of customer records with ease, making financial decision-making clearer and more accurate
+              <div className="md:flex  items-center lg:gap-12 gap-4 md:grid-cols-12">
+                <div className=" lg:mt-0 2xl:col-span-7 xl:col-span-6 lg:col-span-5 col-span-12">
+                  <div className="flex md:flex-row flex-col items- justify-between">
+                    <div className=" w-full text-blue md:py-0 py-4">
+                      <h2 className=" md:text-h3 text-h3 font-bold leading-tight  text-start">
+                        Strategic Data Oversight
+                      </h2>
+                      <p className="  text-start text-p font-medium">
+                        Gain control over your funding data with our easy-to-use
+                        tools. Funder Assist helps you keep track of customer
+                        records with ease, making financial decision-making
+                        clearer and more accurate
                       </p>
-                    </div>
-                    <div className="md:w-2/3 w-full">
-                      <img
-                        src="https://mdbcdn.b-cdn.net/img/new/ecommerce/horizontal/058.jpg"
-                        className="lg:w-full w-72  rounded-3xl lg:mx-auto mr-auto  xl:p-8 md:p-4"
-                        alt=""
-                      />
                     </div>
                   </div>
                 </div>
-                <div className=" lg:mb-0 md:col-span-6 xl:p-12 md:p-6 ">
-                  <div className="mb-4 border-b-blue border-b">
-                    <div className="flex flex-wrap items-center justify-between mb-2">
-                      <h2 className="lg:text-h4 text-h5 text-blue font-bold">
-                      Data Handling Made Easy
-                      </h2>
-                      <Arrow />
-                    </div>
-                  </div>
 
-                  <div className="mb-4">
-                    <div className="mb-4 border-b-blue border-b">
-                      <div className="flex items-center justify-between mb-2">
-                        <h2 className="lg:text-h4 text-h5 text-blue font-bold">
-                        Data Growth, Handled
-                        </h2>
-                        <Arrow />
+                <div className="lg:mb-0 2xl:col-span-5 xl:col-span-6 lg:col-span-7 col-span-12 ">
+                  <div
+                    className=" mx-auto   md:py-8 py-16 my-6  xl:px-6"
+                    id="faqs"
+                  >
+                    <div className="">
+                      <div className="pb-4 border-b-blue border-b mb-3">
+                        <div
+                          className={`flex items-start  justify-between   cursor-pointer ${
+                            activeIndex === 0 ? "bg-gray-100" : ""
+                          }`}
+                          onClick={() => toggleAccordion(0)}
+                        >
+                          <h2 className="lg:text-h4 text-h5 text-blue font-bold text-start">
+                            Data Handling Made Easy
+                          </h2>
+                          <Arrow activeIndex={activeIndex} />
+                        </div>
+                        <div
+                          className="faq-content"
+                          style={{
+                            maxHeight:
+                              activeIndex === 0 ? `${contentHeight}px` : "0",
+                            overflow: "hidden",
+                            transition: "max-height 0.6s ease-in-out",
+                          }}
+                          ref={contentRef}
+                        >
+                          <p className="font-medium text-p text-left text-blue">
+                            With Funder Assist, managing financial data doesn't
+                            have to be a headache. Our intuitive platform
+                            streamlines the process, giving you more time to
+                            focus on your customers
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-
-                  <div className="lg:mb-4 ">
-                    <div className="mb-4 border-b-blue border-b">
-                      <div className="flex items-center justify-between mb-2">
-                        <h2 className="lg:text-h4 text-h5 text-blue font-bold">
-                        Consistent Data Management
-                        </h2>
-                        <Arrow />
+                      {/* <hr className="border-b-blue border-b opacity-50 " /> */}
+                      <div className="pb-4 border-b-blue border-b">
+                        <div
+                          className={`flex items-center justify-between py- cursor-pointer ${
+                            activeIndex === 1 ? "bg-gray-100" : ""
+                          }`}
+                          onClick={() => toggleAccordion(1)}
+                        >
+                          <h2 className="lg:text-h4 text-h5 text-blue font-bold text-start">
+                            Data Growth, Handled
+                          </h2>
+                          <Arrow activeIndex={activeIndex} />
+                        </div>
+                        <div
+                          className="faq-content"
+                          style={{
+                            maxHeight:
+                              activeIndex === 1 ? `${contentHeight}px` : "0",
+                            overflow: "hidden",
+                            transition: "max-height 0.6s ease-in-out",
+                          }}
+                          ref={contentRef}
+                        >
+                          <p className="font-medium text-p text-left text-blue">
+                          As your funding operations grow, so does your data. Funder Assist scales with you, ensuring that your expanding data is always manageable and accessible
+                          </p>
+                          <br />
+                        </div>
                       </div>
+                     
+                      <div className="pb-4 pt-2 border-b-blue border-b">
+                        <div
+                          className={`flex items-center justify-between cursor-pointer ${
+                            activeIndex === 2 ? "bg-gray-100" : ""
+                          }`}
+                          onClick={() => toggleAccordion(2)}
+                        >
+                          <h2 className="lg:text-h4 text-h5 text-blue font-bold text-left">
+                            Consistent Data Management
+                          </h2>
+                          <Arrow activeIndex={activeIndex} />
+                        </div>
+                        <div
+                          className="faq-content"
+                          style={{
+                            maxHeight:
+                              activeIndex === 2 ? `${contentHeight}px` : "0",
+                            overflow: "hidden",
+                            transition: "max-height 0.6s ease-in-out",
+                          }}
+                          ref={contentRef}
+                        >
+                          <p className="font-medium text-p text-left text-blue">
+                          Repeat success with every customer. Funder Assist's repeatable processes mean you can provide reliable and consistent funding services, backed by solid data every time
+                    
+                          </p>
+                          <br />
+                        </div>
+                      </div>
+                    
                     </div>
                   </div>
                 </div>

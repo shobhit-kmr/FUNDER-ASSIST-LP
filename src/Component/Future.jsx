@@ -12,7 +12,7 @@ const Future = () => {
               <h1 className="mb-3 lg:text-h1 md:text-h2 text-h3 font-bold leading-[1.2] text-yellow lg:mx-40">
                 How To Plane A Comfortable And Secure Future
               </h1>
-              <p className="text-black text-p font-semibold mt-16 lg:mx-64 xl:mx-96 leading 1.5rem ">
+              <p className="text-black font-medium text-p mt-16 lg:mx-64 xl:mx-96 leading 1.5rem ">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                 tincidunt, mi ac fermentum congue, diam urna finibus lectus, at
                 Lorem ipsum dolor . Lorem ipsum dolor sit amet, consectetur

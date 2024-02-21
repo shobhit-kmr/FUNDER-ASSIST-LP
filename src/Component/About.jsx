@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Btn from '../Common/Btn';
+import BlueArrow from '../Common/BlueArrow';
 import Arrow from '../Common/Arrow';
 
 const CompanyHighlight = () => {
@@ -59,23 +59,29 @@ const CompanyHighlight = () => {
 
   return (
     <>
-      {/* ************About Starts ************** */}
-      <div className="container-fluid h-max font-poppins bg-blue py-12 px-6 box-border">
-        <div className="grid lg:grid-cols-12 grid-cols-4 h-max w-full lg:container gap-3 mx-auto bg-yellow rounded-3xl lg:p-16 md:p-6 p-3">
-          <div className="bg-red col-span-7  lg:py-16 py-6 px-6 space-y-8">
+      <div className="container-fluid h-max bg-blue py-12 px-6 box-border">
+        <div className="grid lg:grid-cols-12 grid-cols-4 h-max w-full lg:container gap-3 mx-auto bg-gradient-to-r from-yellow  to-orange rounded-3xl lg:p-16 md:p-6 p-3">
+          <div className="bg-red col-span-7  lg:py-16 py-6 md:px-6 px- space-y-8">
             <div className="flex flex-col items-center justify-center  bg-gray-200">
               <div className="  ">
-                <h1 className="lg:text-h1 md:text-h2 text-h3 text-blue font-semibold mb-6 leading-tight">
+                <h1 className="lg:text-h1 md:text-h2 text-h3 text-blue mb-6 font-bold leading-tight">
                 Discover Funder Assist
                 </h1>
 
-                <p className="text-lg mb-4">
+                <p className="font-medium text-p mb-4">
                 Learn more about how Funder Assist is changing the game for agents in the funding sector. More than just a service, we're a partner in your professional journey!
                 </p>
 
-                <div className="flex items-center justify-start">
-                  <Btn name="More Services" />
-                  <Arrow />
+                <div className="flex flex-wrap gap-2 items-center justify-start">
+                 <div>
+                    <button
+                      type="button"
+                      class="text-white text-h5 font-bold bg-blue focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80  rounded-full text-lg px-8 py-3 text-center me-2"
+                    >
+                     Get Started Now
+                    </button>
+                  </div>
+                 <BlueArrow/>
                 </div>
               </div>
             </div>
