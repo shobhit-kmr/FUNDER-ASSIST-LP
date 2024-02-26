@@ -1,7 +1,12 @@
 import React, { useState, useRef, useEffect } from "react";
 import Btn from "../Common/Btn";
+import hero from "../Images/Hero.jpg"; 
 import Arrow from "../Common/Arrow";
 import logo from "../Images/Logo.png";
+import Cloud  from "../Images/Cloud.jpg";
+import Heroicon1  from "../Images/Heroicon1.png";
+import Heroicon2  from "../Images/Heroicon2.png";
+import Heroicon3 from "../Images/Heroicon3.png";
 
 const Accordion = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -52,10 +57,21 @@ export default function Hero() {
   }, [activeIndex]);
 
   return (
-    <main class="bg-blue text-balance">
+    <main 
+    className="text-balance"
+    style={{
+      backgroundImage: `linear-gradient(rgba(0, 53, 102, 0.8), rgba(0, 53, 102, 0.8)), url(${hero})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'top center',
+      backgroundSize: 'cover',
+    }}
+  >
+    {/* <div className="absolute inset-0 bg-black opacity-60"> */}
+
+  {/* </div> */}
       {/* ************Header Starts************** */}
-      <nav className="bg-blue">
-        <div className="lg:container mx-auto  sm:px-2 xl:px-8">
+      <nav className="bg-bl">
+        <div className="lg:container mx-auto  sm:px-6 xl:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Image on the left */}
             <div className="flex-shrink-0">
@@ -171,7 +187,7 @@ export default function Hero() {
       {/* ************Header Ends************** */}
 
       {/* ************Bold Text Section Starts ************** */}
-      <div class="flex items-center bg-blue  dark:bg-gray-800 lg:container mx-auto">
+      <div class="flex items-center   dark:bg-gray-800 lg:container mx-auto">
         <div class="xl:container relative flex px-6 xl:mt-36 md:mt-20 mt-16   xl:mx-auto  ">
           <div class="relative z-20 flex flex-col ">
             <h1 class="flex flex-col xl:text-h md:text-h1 text-h3  font-semibold leading-tight   text-white">
@@ -195,39 +211,39 @@ export default function Hero() {
       {/* ************Bold Text Section Ends ************** */}
 
       {/* ************Connect With More People Starts ************** */}
-      <div className="grid xl:grid-cols-2 grid-cols-1 container lg:mx-auto mx-3 h-min px-2">
+      <div className="grid xl:grid-cols-2 grid-cols-1 container lg:mx-auto mx-3 h-min  box-border">
         <div className="md:block hidden"></div>
         <div className="flex xl:flex-row flex-col  xl:items-center xl:justify-start justify-start">
-          <div className="mx-2 text-yellow">
+          <div className="md:px-2 text-yellow">
             <span className="text-h4 font-bold mb-4">Funder Assist :</span>
             <br />
-            <span className="text-h4 mb-4">Where Funding Meets Efficiency</span>
+            <span className="text-h4 text-white mb-4">Where Funding Meets Efficiency</span>
           </div>
-          <div className="flex items-center xl:justify-center justify-start ">
-            <div className="h-24 lg:my-12 my-3 flex items-center -space-x-6">
-              <div className="w-24 h-24 rounded-full inline-block border-4 border-yellow overflow-hidden flex items-center justify-center">
+          {/* <div className="flex items-center xl:justify-center justify-start  border-box">
+            <div className="h-24 lg:my-12 my-3 flex items-center -space-x-4 ">
+              <div className="w-24 h-24 bg-blue object-center flex items-center justify-center rounded-full  border-2 border-yellow overflow-hidden">
                 <img
-                  src="https://source.unsplash.com/24x24/?apple"
+                  src={Heroicon1}
                   alt="Apple"
-                  className="w-full h-full rounded-full object-cover"
+                  className="w-16 h-16 rounded-full object-center"
                 />
               </div>
-              <div className="w-24 h-24 bg-orange rounded-full inline-block border-4 border-yellow overflow-hidden">
+              <div className="w-24 h-24 bg-blue object-center flex items-center justify-center rounded-full  border-2 border-yellow overflow-hidden">
                 <img
-                  src="https://source.unsplash.com/24x24/?ball"
+                  src={Heroicon2}
                   alt="Ball"
-                  className="w-full h-full rounded-full object-cover"
+                  className="w-16 h-16 rounded-full object-center"
                 />
               </div>
-              <div className="w-24 h-24 bg-black rounded-full inline-block border-4 border-yellow overflow-hidden">
+              <div className="w-24 h-24 bg-blue object-center flex items-center justify-center rounded-full  border-2 border-yellow overflow-hidden">
                 <img
-                  src="https://source.unsplash.com/24x24/?cat"
+                  src={Heroicon3}
                   alt="Cat"
-                  className="w-full h-full rounded-full object-cover"
+                  className="w-16 h-16 rounded-full object-center"
                 />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* ************Connect With More People Ends ************** */}
@@ -235,7 +251,7 @@ export default function Hero() {
       {/* ************Strategy Finance Starts ************** */}
       <div className="lg:container  mx-auto px-6 2xl:px-6  lg:py-12 py-8">
         <section className=" bg-gradient-to-r from-yellow to-orange  rounded-3xl ">
-          <div className="lg:px-6  sm:px-4 px-2 text-center  lg:text-left">
+          <div className="lg:px-6  sm:px-2 px-2 text-center  lg:text-left">
             <div className="lg:container mx-auto ">
               <div className="md:flex  items-center lg:gap-12 gap-4 md:grid-cols-12">
                 <div className=" lg:mt-0 2xl:col-span-7 xl:col-span-6 lg:col-span-5 col-span-12">
@@ -256,21 +272,27 @@ export default function Hero() {
 
                 <div className="lg:mb-0 2xl:col-span-5 xl:col-span-6 lg:col-span-7 col-span-12 ">
                   <div
-                    className=" mx-auto   md:py-8 py-16 my-6  xl:px-6"
+                    className=" mx-auto   md:py-8 md:py-16 my-6  xl:px-6"
                     id="faqs"
                   >
                     <div className="">
                       <div className="pb-4 border-b-blue border-b mb-3">
                         <div
-                          className={`flex items-start  justify-between   cursor-pointer ${
+                          className={`grid grid-flow-col  cursor-pointer ${
                             activeIndex === 0 ? "bg-gray-100" : ""
                           }`}
                           onClick={() => toggleAccordion(0)}
                         >
-                          <h2 className="lg:text-h4 text-h5 text-blue font-bold text-start">
+                          <div className="flex items-center ">
+
+                          <h2 className="lg:text-h4 md:text-h5 text-blue font-bold text-start">
                             Data Handling Made Easy
                           </h2>
+                          </div>
+                          <div className="ml-auto">
+
                           <Arrow activeIndex={activeIndex} />
+                          </div>
                         </div>
                         <div
                           className="faq-content"
@@ -293,15 +315,21 @@ export default function Hero() {
                       {/* <hr className="border-b-blue border-b opacity-50 " /> */}
                       <div className="pb-4 border-b-blue border-b">
                         <div
-                          className={`flex items-center justify-between py- cursor-pointer ${
+                          className={`grid grid-flow-col cursor-pointer ${
                             activeIndex === 1 ? "bg-gray-100" : ""
                           }`}
                           onClick={() => toggleAccordion(1)}
                         >
-                          <h2 className="lg:text-h4 text-h5 text-blue font-bold text-start">
+                          <div className="flex items-center jusitfy-center">
+                          <h2 className="lg:text-h4 md:text-h5 text-blue font-bold text-start">
                             Data Growth, Handled
                           </h2>
+
+                          </div>
+                          <div className="ml-auto">
+
                           <Arrow activeIndex={activeIndex} />
+                          </div>
                         </div>
                         <div
                           className="faq-content"
@@ -320,17 +348,23 @@ export default function Hero() {
                         </div>
                       </div>
                      
-                      <div className="pb-4 pt-2 border-b-blue border-b">
+                      <div className="pb-2 pt-2 border-b-blue border-b">
                         <div
-                          className={`flex items-center justify-between cursor-pointer ${
+                          className={`grid grid-flow-col cursor-pointer ${
                             activeIndex === 2 ? "bg-gray-100" : ""
                           }`}
                           onClick={() => toggleAccordion(2)}
                         >
-                          <h2 className="lg:text-h4 text-h5 text-blue font-bold text-left">
+                          <div className="flex items-center jusitfy-center">
+                          <h2 className="lg:text-h4 md:text-h5 text-blue font-bold text-left">
                             Consistent Data Management
                           </h2>
+
+                          </div>
+                          <div className="ml-auto">
+
                           <Arrow activeIndex={activeIndex} />
+                          </div>
                         </div>
                         <div
                           className="faq-content"
@@ -349,7 +383,6 @@ export default function Hero() {
                           <br />
                         </div>
                       </div>
-                    
                     </div>
                   </div>
                 </div>

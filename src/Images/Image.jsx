@@ -1,5 +1,11 @@
 import Logo from "../Images/Logo.png";
-export{
-    Logo,
-   
-}
+import Cloud from "../Images/Cloud.png";
+import hero from "../Images/Hero.jpg";
+import Heroicon1 from "../Images/Heroicon1.png";
+import Heroicon2 from "../Images/Heroicon2.png";
+import Heroicon3 from "../Images/Heroicon3.png";
+import Communication from "../Images/Communication.jpg";
+import LeadManagement from "../Images/LeadManagement.jpg";
+import Tracking from "../Images/Tracking.jpg";
+import SecuritywithSupport from "../Images/SecuritywithSupport.jpg";
+export { Logo, Cloud , hero , Heroicon1 , Heroicon2 , Heroicon3 , Communication , LeadManagement , Tracking , SecuritywithSupport };

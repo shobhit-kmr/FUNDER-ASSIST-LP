@@ -92,7 +92,7 @@ const CompanyHighlight = () => {
                 <div className="p-4 mb-10  m ">
                   <div className=" border-b-2 border-blue pb-5 md:pt-6">
                     <div>
-                      <p className="text-h1 text-blue font-bold">{count3}M</p>
+                      <p className="lg:text-h1 text-h2 text-blue font-bold">{count3}M</p>
                       <p className="text-blue text-h5 uppercase font-bold">
                         Our users around the world
                       </p>
@@ -100,7 +100,7 @@ const CompanyHighlight = () => {
                   </div>
                   <div className=" border-b-2 border-blue pb-5 pt-6">
                     <div>
-                      <p className="text-h1 text-blue font-bold">{count1}M</p>
+                      <p className="lg:text-h1 text-h2 text-blue font-bold">{count1}M</p>
                       <p className="text-blue uppercase font-bold">
                         We generated revenue in First Quarter
                       </p>
@@ -109,7 +109,7 @@ const CompanyHighlight = () => {
 
                   <div className=" border-b-2 border-blue pb-5 pt-6 bg-gray">
                     <div>
-                      <p className="text-h1 text-blue font-bold ">{count2}%</p>
+                      <p className="lg:text-h1 text-h2 text-blue font-bold ">{count2}%</p>
                       <p className="text-blue uppercase font-bold">
                         Our investment Growth Rate this year
                       </p>

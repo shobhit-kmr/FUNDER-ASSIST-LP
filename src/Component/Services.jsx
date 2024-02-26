@@ -10,10 +10,10 @@ export default function Services() {
         <div className="lg:container py-16 mx-auto grid md:grid-cols-12">
 
           {/* First Block - Main Content */}
-          <div className="xl:col-span-8 md:col-span-6 p-4">
+          <div className="xl:col-span-8 md:col-span-6 p-6">
             <div className="flex flex-col items-center justify-center">
               <div>
-                <h1 className="xl:text-h1 text-h2 lg:leading-normal leading-tight text-yellow font-bold mb-6">
+                <h1 className="xl:text-h1 md:text-h2 text-h3 lg:leading-normal leading-tight text-yellow font-bold mb-6">
                 Custom Data Solutions
                 </h1>
                 <p className="font-medium text-p mb-4 py-6 md:w-[70%] ">
@@ -28,7 +28,7 @@ export default function Services() {
           </div>
 
           {/* Second Block - Services List */}
-          <div className="xl:col-span-4 md:col-span-6 lg:p-4 md:border-none bg-gray-100 px-4">
+          <div className="xl:col-span-4 md:col-span-6 lg:p-4 md:border-none bg-gray-100 px-6">
             <div className="mx-auto">
 
               {/* Block-1: Data Security */}

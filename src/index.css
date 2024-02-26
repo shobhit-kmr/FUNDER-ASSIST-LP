@@ -10,9 +10,10 @@ body {
 }
 
 .slick-slide > div {
-    margin: 0 20px;
+    padding: 0 10px;
 }
 
 .slick-prev:before, .slick-next:before {
-    display: none; 
+    display: non; 
 }
+
