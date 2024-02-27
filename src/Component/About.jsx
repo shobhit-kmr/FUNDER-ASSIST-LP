@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import BlueArrow from '../Common/BlueArrow';
-import Arrow from '../Common/Arrow';
+import React, { useState, useEffect } from "react";
+import BlueArrow from "../Common/BlueArrow";
+import Arrow from "../Common/Arrow";
 
 const CompanyHighlight = () => {
   const [count1, setCount1] = useState(0);
@@ -10,19 +10,20 @@ const CompanyHighlight = () => {
   useEffect(() => {
     const targetCount1 = 450;
     const targetCount2 = 250;
-    const initialSpeed = 20; 
+    const initialSpeed = 20;
     const slowDownThreshold = 0.9;
     const step = 3;
 
     const animateCounter = (target, setCount) => {
       let start = 0;
-      const duration = 1000; 
+      const duration = 1000;
       const interval = duration / (target / initialSpeed);
 
       const counterInterval = setInterval(() => {
         start += step;
         setCount((prevCount) => {
-          const newCount = prevCount < target ? Math.min(prevCount + step, target) : target;
+          const newCount =
+            prevCount < target ? Math.min(prevCount + step, target) : target;
           if (start / target >= slowDownThreshold) {
             return Math.min(newCount, target);
           }
@@ -65,23 +66,23 @@ const CompanyHighlight = () => {
             <div className="flex flex-col items-center justify-center  bg-gray-200">
               <div className="  ">
                 <h1 className="lg:text-h1 md:text-h2 text-h3 text-blue mb-6 font-bold leading-tight">
-                Discover Funder Assist
+                  Discover Funder Assist
                 </h1>
-
                 <p className="font-medium text-p mb-4">
-                Learn more about how Funder Assist is changing the game for agents in the funding sector. More than just a service, we're a partner in your professional journey!
+                  Learn more about how Funder Assist is changing the game for
+                  agents in the funding sector. More than just a service, we're
+                  a partner in your professional journey!
                 </p>
-
                 <div className="flex flex-wrap gap-2 items-center justify-start">
-                 <div>
+                  <div>
                     <button
                       type="button"
                       class="text-white text-h5 font-bold bg-blue focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80  rounded-full text-lg px-8 py-3 text-center me-2"
                     >
-                     Get Started Now
+                      Get Started Now
                     </button>
                   </div>
-                 <BlueArrow/>
+                  <BlueArrow />
                 </div>
               </div>
             </div>
@@ -92,7 +93,9 @@ const CompanyHighlight = () => {
                 <div className="p-4 mb-10  m ">
                   <div className=" border-b-2 border-blue pb-5 md:pt-6">
                     <div>
-                      <p className="lg:text-h1 text-h2 text-blue font-bold">{count3}M</p>
+                      <p className="lg:text-h1 text-h2 text-blue font-bold">
+                        {count3}M
+                      </p>
                       <p className="text-blue text-h5 uppercase font-bold">
                         Our users around the world
                       </p>
@@ -100,7 +103,9 @@ const CompanyHighlight = () => {
                   </div>
                   <div className=" border-b-2 border-blue pb-5 pt-6">
                     <div>
-                      <p className="lg:text-h1 text-h2 text-blue font-bold">{count1}M</p>
+                      <p className="lg:text-h1 text-h2 text-blue font-bold">
+                        {count1}M
+                      </p>
                       <p className="text-blue uppercase font-bold">
                         We generated revenue in First Quarter
                       </p>
@@ -109,7 +114,9 @@ const CompanyHighlight = () => {
 
                   <div className=" border-b-2 border-blue pb-5 pt-6 bg-gray">
                     <div>
-                      <p className="lg:text-h1 text-h2 text-blue font-bold ">{count2}%</p>
+                      <p className="lg:text-h1 text-h2 text-blue font-bold ">
+                        {count2}%
+                      </p>
                       <p className="text-blue uppercase font-bold">
                         Our investment Growth Rate this year
                       </p>

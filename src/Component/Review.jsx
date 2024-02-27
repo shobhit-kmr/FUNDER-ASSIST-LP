@@ -85,7 +85,7 @@ function Review() {
             </p>
           </div>
         </div>
-        <div className="lg:w-[90%] w-[70%]  mx-auto relative">
+        <div className="lg:w-[90%] w-[75%]  mx-auto relative mb-6">
           <Slider {...settings} ref={sliderRef} className="">
             {data.map((d, index) => (
               <div
@@ -98,7 +98,7 @@ function Review() {
                       {d.name}
                     </h3>
                     <div>
-                      <p className="text-center text-pretty font-medium text-p">
+                      <p className=" font-medium text-p text-pretty text-justify">
                         {d.review}
                       </p>
                     </div>
@@ -107,25 +107,23 @@ function Review() {
               </div>
             ))}
           </Slider>
-        <div className="flex justify-between absolute md:-inset-x-12 -inset-x-8  top-1/2 md:-my-4 -my-4 left- items-start">
-          <button onClick={goToPrev}>
-            <img
-              src={arrowleft}
-              className="md:h-11 md:w-11 h-8 w-8  bg-yellow rounded-full"
-              alt=""
-            />
-          </button>
-          <button onClick={goToNext}>
-            <img
-              src={arrowleft}
-              className="md:h-11 md:w-11 h-8 w-8  bg-yellow rounded-full rotate-180"
-              alt=""
-            />
-          </button>
-         
+          <div className="flex justify-between absolute md:-inset-x-12 -inset-x-8  top-1/2 md:-my-4 -my-4 left- items-start">
+            <button onClick={goToPrev}>
+              <img
+                src={arrowleft}
+                className="md:h-11 md:w-11 h-8 w-8  bg-yellow rounded-full"
+                alt=""
+              />
+            </button>
+            <button onClick={goToNext}>
+              <img
+                src={arrowleft}
+                className="md:h-11 md:w-11 h-8 w-8  bg-yellow rounded-full rotate-180"
+                alt=""
+              />
+            </button>
+          </div>
         </div>
-        </div>
-
       </div>
     </section>
   );
